@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f5fa;
+  color: #2b2b2b;
+}
+
+h1 {
+  color: #1f2d3d;
+}
+
+.contingut {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.missatge {
+  text-align: center;
+  padding: 30px;
+}
+
+.missatge-error {
+  color: #c0392b;
+  font-weight: bold;
+}
