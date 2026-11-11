@@ -1,70 +1,30 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import NavigationBar from '@/components/NavigationBar.vue'
 </script>
 
 <template>
-  <header class="capcalera">
-    <span class="logo">FoodExplorer</span>
-    <nav>
-      <RouterLink to="/">Inici</RouterLink>
-      <RouterLink to="/receptes">Receptes</RouterLink>
-    </nav>
-  </header>
-
   <main class="contingut">
-    <!-- Vista que correspon a la url -->
-    <RouterView/>
+    <header class="capcalera">
+      <h1>Bon profit</h1>
+      <NavigationBar></NavigationBar>
+    </header>
+    <RouterView></RouterView>
   </main>
 </template>
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #fdf8ee;
-  color: #2b2b2b;
-}
-
+<style scoped>
 .capcalera {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 10px;
-  padding: 15px 30px;
-  background: #2e6b4f;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2a9078;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-nav a {
-  margin-left: 20px;
-  color: #d6ecdf;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ffffff;
-}
-
-/* Enllaç de la pàgina actual */
-nav a.router-link-active {
-  color: #ffd166;
-  border-bottom: 2px solid #ffd166;
-}
-
-.contingut {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px 20px;
+.capcalera h1 {
+  margin: 0;
 }
 </style>
