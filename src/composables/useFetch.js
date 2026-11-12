@@ -7,10 +7,8 @@ export function useFetch(url) {
   // Dades que retorna l'API
   const dades = ref(null)
 
-  // Missatge d'error si n'hi ha
   const error = ref(null)
 
-  // Diu si encara s'espera la resposta
   const carregant = ref(true)
 
   // Funció que fa la petició a l'API

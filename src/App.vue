@@ -5,7 +5,7 @@ import NavigationBar from '@/components/NavigationBar.vue'
 
 <template>
   <main class="contingut">
-    <header class="capcalera">
+    <header class="header">
       <h1>Bon profit</h1>
       <NavigationBar></NavigationBar>
     </header>
@@ -14,17 +14,20 @@ import NavigationBar from '@/components/NavigationBar.vue'
 </template>
 
 <style scoped>
-.capcalera {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #2a9078;
+  margin-bottom: 25px;
+  padding: 15px 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  border-bottom: 4px solid #2a9078;
 }
 
-.capcalera h1 {
+.header h1 {
   margin: 0;
+  font-size: 28px;
 }
 </style>

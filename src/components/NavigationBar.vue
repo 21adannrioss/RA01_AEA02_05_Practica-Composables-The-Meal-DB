@@ -11,12 +11,13 @@ import { RouterLink } from 'vue-router'
 <style scoped>
 .menu a {
   display: inline-block;
-  padding: 8px 18px;
+  padding: 10px 22px;
   background: #2a9078;
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 25px;
+  transition: background 0.2s;
 }
 
 .menu a:hover {

@@ -46,7 +46,7 @@ function cercarReceptes(text) {
 <style scoped>
 .llista {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
 }
 </style>

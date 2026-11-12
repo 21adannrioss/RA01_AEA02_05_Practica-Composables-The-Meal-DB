@@ -30,24 +30,33 @@ function buscar() {
 .cercador {
   display: flex;
   justify-content: flex-end;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 10px;
+  margin-bottom: 25px;
 }
 
 input {
-  padding: 5px 8px;
-  border: 1px solid #888;
-  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 2px solid #cfd8d6;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #2a9078;
 }
 
 button {
-  padding: 8px 20px;
+  padding: 10px 24px;
   background: #2a9078;
   color: #ffffff;
   font-weight: bold;
+  font-size: 15px;
   border: none;
-  border-radius: 6px;
+  border-radius: 25px;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 button:hover {

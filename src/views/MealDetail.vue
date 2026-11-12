@@ -39,10 +39,9 @@ const ingredients = computed(() => {
 
     // Només s'afegeixen els ingredients que tenen text
     if(nom && nom.trim() !== '') {
-      llista.push({ nom: nom, quantitat: quantitat })
+      llista.push({nom: nom, quantitat: quantitat})
     }
   }
-
   return llista
 })
 </script>
@@ -76,17 +75,27 @@ const ingredients = computed(() => {
 </template>
 
 <style scoped>
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
 .detall {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   align-items: flex-start;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .detall img {
   width: 100%;
   max-width: 350px;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .detall-text {
@@ -96,11 +105,17 @@ const ingredients = computed(() => {
 
 .detall-text h3 {
   margin-top: 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #2a9078;
 }
 
-/* Respecta els salts de línia del text de les instruccions */
+.detall-text ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
 .instruccions {
   white-space: pre-line;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 </style>

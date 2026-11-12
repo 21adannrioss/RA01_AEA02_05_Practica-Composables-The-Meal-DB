@@ -20,9 +20,7 @@ const props = defineProps({
       <p>{{ props.meal.strArea }} - {{ props.meal.strCategory }}</p>
 
       <!-- Enllaç al detall del plat per l'URL -->
-      <RouterLink :to="{name: 'Meal', params: {idMeal: props.meal.idMeal}}">
-        Recepta
-      </RouterLink>
+      <RouterLink :to="{name: 'Meal', params: {idMeal: props.meal.idMeal}}">Recepta</RouterLink>
     </div>
   </article>
 </template>
@@ -30,28 +28,50 @@ const props = defineProps({
 <style scoped>
 .targeta {
   background: #ffffff;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.targeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .targeta img {
   width: 100%;
-  border-radius: 6px;
   display: block;
 }
 
+.targeta-text {
+  padding: 15px;
+}
+
 .targeta-text h3 {
-  margin: 10px 0 8px 0;
-  font-size: 16px;
+  margin: 0 0 8px 0;
+  font-size: 17px;
 }
 
 .targeta-text p {
-  margin: 0 0 12px 0;
+  margin: 0 0 15px 0;
   font-size: 14px;
+  color: #777777;
 }
 
 .targeta-text a {
-  color: #5b3fd1;
+  display: inline-block;
+  padding: 8px 18px;
+  background: #2a9078;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.2s;
+}
+
+.targeta-text a:hover {
+  background: #217562;
 }
 </style>
